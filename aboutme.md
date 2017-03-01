@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About me
-subtitle: Naren Mudivarthy working as a Software Engineer.
+subtitle: Tech enthusiast
 published: true
 ---
+
+Naren Mudivarthy, working as a Software Engineer.
