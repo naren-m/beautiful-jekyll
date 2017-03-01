@@ -1,7 +1,8 @@
 ---
-published: true
+layout: post
+title: Using Anaconda
+subtitle: Anaconda for creating virtual environment
 ---
-## Anaconda
 
 ### Introduction
 We are using Anaconda to manage packages and environments for use with Python. With Anaconda, it's simple to install the
