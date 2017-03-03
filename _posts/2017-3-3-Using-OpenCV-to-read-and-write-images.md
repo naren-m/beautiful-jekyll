@@ -87,7 +87,7 @@ plt.axis("off")
     CPU times: user 230 ms, sys: 30 ms, total: 260 ms
     Wall time: 261 ms
 
-![png](img/output_6_2.png)
+![png](../img/opencv_tutorials/basics/read_write_images/output_6_2.png)
 
 So I had a small helper function in image_utils module.
 
@@ -121,7 +121,7 @@ def imshow(input_image):
     CPU times: user 320 ms, sys: 10 ms, total: 330 ms
     Wall time: 328 ms
 
-![png](img/output_8_1.png)
+![png](../img/opencv_tutorials/basics/read_write_images/output_8_1.png)
 
 
 If we see the above image, it is small and not clear. So I had another helper function to show the bigger clear image.
@@ -157,7 +157,7 @@ def imshow_large(input_image):
 %time Ipy.imshow_large(image)
 ```
 
-![png](img/output_10_0.png)
+![png](../img/opencv_tutorials/basics/read_write_images/output_10_0.png)
 
 ***
 ***References***
