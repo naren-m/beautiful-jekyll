@@ -160,7 +160,11 @@ def imshow_large(input_image):
 ![png](../img/opencv_tutorials/basics/read_write_images/output_10_0.png)
 
 ***
+
+
 ***References***
+* [OpenCV tutorials source ](https://github.com/naren-m/opencv_tutorials)
+* [Instructions to start opencv docker](https://github.com/naren-m/opencv_tutorials/blob/master/README.md)
 * [OpenCV-python tutorials](http://docs.opencv.org/3.2.0/dc/d2e/tutorial_py_image_display.html)
 * [How to Display a Matplotlib RGB Image](http://www.pyimagesearch.com/2014/11/03/display-matplotlib-rgb-image/)
 * [Using magics %time](https://ipython.org/ipython-doc/3/interactive/magics.html)
