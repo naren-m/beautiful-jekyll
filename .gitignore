@@ -13,3 +13,6 @@ ehthumbs.db
 .idea*
 .idea/*
 .idea/vcs.xml
+
+# iPython Notebook checkpoints
+_posts/.ipynb_checkpoints/
