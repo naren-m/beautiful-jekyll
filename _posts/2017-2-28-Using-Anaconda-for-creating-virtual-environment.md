@@ -2,16 +2,19 @@
 layout: post
 title: Using Anaconda
 subtitle: Anaconda for creating virtual environment
+published: true
 ---
 
 ### Introduction
-We are using Anaconda to manage packages and environments for use with Python. With Anaconda, it's simple to install the
-packages you'll often use in data science work. You'll also use it to create virtual environments that make working on
-multiple projects much less mind-twisting. Anaconda has simplified my workflow and solved a lot of issues I had dealing 
+Anaconda isvery y to manage packages and environments for use with Python. With Anaconda, it's simple to install the
+packages. Creating virtual environments that make working on
+multiple projects much less hassle free.
+
+Anaconda simplifies dealing 
 with packages and multiple Python versions.
 
 
-Conda is also a virtual environment manager. It's similar to virtualenv and pyenv, other popular environment managers.
+Conda is also a virtual environment manager. It's similar to virtualenv and pyenv etc,.
 
 [Installation instructions for Anaconda](https://www.continuum.io/downloads)
 
