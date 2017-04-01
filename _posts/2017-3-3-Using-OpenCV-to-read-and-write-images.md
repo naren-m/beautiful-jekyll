@@ -1,9 +1,42 @@
-## Using OpenCV
+# Using OpenCV
 
-### Goals
+## Goals
+
+* Starting opencv3 docker for this tutorial
 * Learn how to read, save and show an image
 * Learn how to use cv.imread, cv.imwrite
 * Learn how to show figures in matplotlib in ipython notebook
+
+## Starting opencv3 Docker to run the tutorials
+
+* Install [docker](https://docs.docker.com/engine/getstarted/step_one/#step-1-get-docker) on your system
+* Git clone the [opencv_tutorials](https://github.com/naren-m/opencv_tutorials)
+
+```bash
+mkdir opencv
+cd opencv
+git clone https://github.com/naren-m/opencv_tutorials.git
+```
+
+* Docker pull the narenm/opencv:py3 image
+
+```bash
+docker pull narenm/opencv:py3
+```
+
+* Start the docker image
+
+```bash
+docker run -it -v $PWD:/code -p 8888:8888 narenm/opencv:py3
+```
+
+In the docker prompt
+
+* Start Jupyter in the docker and open the home page with token specified
+
+```bash
+root@94cfd4075afc:/code# /run_jupyter.sh
+```
 
 ### Read an image
 
@@ -23,6 +56,7 @@ Using the second argument(optional) for function, we can specify the following f
 ```python
 cv2.imread("image_name.jpg", cv2.IMREAD_GRAYSCALE)
 ```
+
 ***Usage***
 
 ```python
@@ -61,6 +95,7 @@ Use function cv2.imwrite to save the image.
 First argument is file name and second is the image that we want to save
 
 ***Usage***
+
 ```python
 cv2.imwrite("newimage.png", image)
 ```
@@ -68,13 +103,15 @@ cv2.imwrite("newimage.png", image)
 ***
 
 ### Showing image using matplotlib
+
 Using matplotlib.pyplot directly will give unexpected results as below.
 
-Reason being 
+Reason being
 > OpenCV represents RGB images as multi-dimensional NumPy arrays… ***but in reverse order!***
 > This means that images are actually represented in BGR order rather than RGB!
 
 Fix for this
+
 ```python
 plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 ```
