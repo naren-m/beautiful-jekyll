@@ -175,3 +175,7 @@ source deactivate
  ```
 
 ***
+
+## References
+
+- [Conda docs](https://conda.io/docs/using/envs.html)
