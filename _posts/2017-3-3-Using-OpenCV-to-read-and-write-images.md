@@ -13,7 +13,7 @@
         - [plt.imshow Usage](#pltimshow-usage)
     - [Importing image_utils module](#importing-image_utils-module)
         - [Ipy.imshow Usage](#ipyimshow-usage)
-    - [Ipy.imshow_large Usage](#ipyimshow_large-usage)
+        - [Ipy.imshow_large Usage](#ipyimshow_large-usage)
     - [References](#references)
 
 <!-- /TOC -->
@@ -192,7 +192,7 @@ def imshow_large(input_image):
     IPython.display.display(IPython.display.Image(data=b.getvalue(), format='png', embed=True))
 ```
 
-## Ipy.imshow_large Usage
+### Ipy.imshow_large Usage
 
 ```python
 %time Ipy.imshow_large(image)
