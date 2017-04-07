@@ -5,16 +5,16 @@
 - [Using OpenCV](#using-opencv)
     - [Goals](#goals)
     - [Starting opencv3 Docker to run the tutorials](#starting-opencv3-docker-to-run-the-tutorials)
-        - [Read an image](#read-an-image)
-            - [imread Usage](#imread-usage)
-        - [Write an image](#write-an-image)
-            - [imwrite Usage](#imwrite-usage)
-        - [Showing image using matplotlib](#showing-image-using-matplotlib)
-            - [plt.imshow Usage](#pltimshow-usage)
-        - [Importing image_utils module](#importing-image_utils-module)
-            - [Ipy.imshow Usage](#ipyimshow-usage)
-        - [Ipy.imshow_large Usage](#ipyimshow_large-usage)
-        - [References](#references)
+    - [Read an image](#read-an-image)
+        - [imread Usage](#imread-usage)
+    - [Write an image](#write-an-image)
+        - [imwrite Usage](#imwrite-usage)
+    - [Showing image using matplotlib](#showing-image-using-matplotlib)
+        - [plt.imshow Usage](#pltimshow-usage)
+    - [Importing image_utils module](#importing-image_utils-module)
+        - [Ipy.imshow Usage](#ipyimshow-usage)
+    - [Ipy.imshow_large Usage](#ipyimshow_large-usage)
+    - [References](#references)
 
 <!-- /TOC -->
 
@@ -56,7 +56,7 @@ In the docker prompt
 /run_jupyter.sh
 ```
 
-### Read an image
+## Read an image
 
 Use function cv2.imread to read the image. Image should be in current working directory or should be given a full path.
 
@@ -70,7 +70,7 @@ Using the second argument(optional) for function, we can specify the following f
 
 > Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 
-#### imread Usage
+### imread Usage
 
 ```python
 import cv2
@@ -89,28 +89,26 @@ Output:
     height: 2448 pixels
     channels: 3
 
-***
 
-### Write an image
+## Write an image
 
 Use function cv2.imwrite to save the image.
 
 First argument is file name and second is the image that we want to save
 
-#### imwrite Usage
+### imwrite Usage
 
 ```python
 cv2.imwrite("newimage.png", image)
 ```
 
-***
 
-### Showing image using matplotlib
+## Showing image using matplotlib
 
 Using matplotlib.pyplot directly will give unexpected results as below.
 
 Reason being
-> OpenCV represents RGB images as multi-dimensional NumPy arrays… ***but in reverse order!***
+> OpenCV represents RGB images as multi-dimensional NumPy arrays… ___but in reverse order!___
 > This means that images are actually represented in BGR order rather than RGB!
 
 Fix for this
@@ -119,7 +117,7 @@ Fix for this
 plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 ```
 
-#### plt.imshow Usage
+### plt.imshow Usage
 
 ```python
 plt.axis("off")
@@ -134,7 +132,7 @@ Output:
 
 So I had a small helper function in image_utils module.
 
-### Importing image_utils module
+## Importing image_utils module
 
 ```python
 import sys
@@ -158,7 +156,7 @@ def imshow(input_image):
     plt.imshow(cv_rgb)
 ```
 
-#### Ipy.imshow Usage
+### Ipy.imshow Usage
 
 ```python
 %time Ipy.imshow(image)
@@ -194,7 +192,7 @@ def imshow_large(input_image):
     IPython.display.display(IPython.display.Image(data=b.getvalue(), format='png', embed=True))
 ```
 
-### Ipy.imshow_large Usage
+## Ipy.imshow_large Usage
 
 ```python
 %time Ipy.imshow_large(image)
@@ -210,10 +208,7 @@ ___Caveat of using  'imshow\_large' is, it takes longer time to load and show th
 
 ![png](../img/opencv_tutorials/basics/read_write_images/output_10_0.png)
 
-***
-
-
-### References
+## References
 
 - [OpenCV tutorials source](https://github.com/naren-m/opencv_tutorials)
 - [Instructions to start opencv docker](https://github.com/naren-m/opencv_tutorials/blob/master/README.md)

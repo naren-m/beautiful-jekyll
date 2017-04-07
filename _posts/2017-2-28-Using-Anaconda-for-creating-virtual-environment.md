@@ -30,7 +30,7 @@ Conda is also a virtual environment manager. It's similar to virtualenv and pyen
 
 [Installation instructions for Anaconda](https://www.continuum.io/downloads)
 
-***
+
 ## Managing Packages
 
 Once you have Anaconda installed, managing packages is fairly straightforward. To install a package, type in your terminal.
