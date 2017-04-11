@@ -20,10 +20,10 @@
 
 ## Goals
 
-- Starting opencv3 docker for this tutorial
-- Learn how to read, save and show an image
-- Learn how to use cv.imread, cv.imwrite
-- Learn how to show figures in matplotlib in ipython notebook
+- Starting opencv3 docker
+- Read, save and show an image
+- Use cv.imread, cv.imwrite
+- Show figures in matplotlib in ipython notebook
 
 ## Starting opencv3 Docker to run the tutorials
 
