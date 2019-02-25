@@ -1,3 +1,10 @@
+---
+layout: post
+title: Project Euler Cli app
+subtitle: Simple Cli app for accessing Project Euler problems in terminal
+published: true
+---
+
 # Project Euler Cli app
 A simple cli app to show the problems from Project Euler.
 
