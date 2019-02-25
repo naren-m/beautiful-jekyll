@@ -4,7 +4,6 @@ title: Project Euler Cli app
 subtitle: Simple Cli app for accessing Project Euler problems in terminal
 published: true
 ---
-
 # Project Euler Cli app
 A simple cli app to show the problems from Project Euler.
 
@@ -102,7 +101,7 @@ class Euler:
 ```
 
 **Setup.py**
-To make the app pip installable, we need to have setup.py.  All we do in this is import the setup method from setuptools and pass the values to the arguments. Key argument of this method is entry_points. Using this we tell python to run a module in our app. 
+To make the app pip installable, we need to have setup.py.  All we do in this is import the setup method from setuptools and calling it with few arguments. Key argument here is `entry_points`. Using this we specify which runnable application will be invoked. We set it up as `euler.__main__:main` . 
 
 ```python
 from setuptools import setup
@@ -117,13 +116,18 @@ setup(
 
 **Installing the app using pip during development**
 
-This is as simple as executing below command
+Easiest way to install and uninstall your Python Cli app is to use pip. This is as simple as executing below command. 
 ```shell
 pip3 install -e .
 ```
 
-**Publishing out app to pypi.**
-This i will have to figure out how to do. Will update once figured out. 
+We can put this in make file so that we don’t have to type out entire command.
+```makefile
+install:
+	pip3 install -e .
+```
+
+Source code for this app is at [GitHub - Naren-m/euler: Terminal app to access project Euler problems in terminal](https://github.com/naren-m/euler)
 
 #Blogs
 #Tutorials
