@@ -32,12 +32,12 @@ $$
 
 | n=     | 0  | 1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |
 |--------|----|----|---|---|---|---|---|---|---|---|---|---|
-| $Fib_n$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
+| $$Fib_n$$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
 
 
-- $$3^{rd}$$ fibonacci number is 2 and every $$3^{rd}$$ number is a multiple of 2
-- $$4^{th}$$ fibonacci number is 3 and every $$4^{th}$$ number is a multiple of 3
-- $$5^{th}$$ fibonacci number is 5 and every $$5^{th}$$ number is a multiple of 5
+- Third fibonacci number is 2 and every third number is a multiple of 2
+- Fourth fibonacci number is 3 and every fourth number is a multiple of 3
+- Fifth fibonacci number is 5 and every fifth number is a multiple of 5
 
 ### Exact divisibility of fib(n)
 
@@ -132,11 +132,11 @@ F_2  = C * F_1 = C * ( C * F_0) = C^2 * F_0 \\
 F_3  = C * F_2 = C^2 * ( C * F_0) = C^3 * F_0 \\
 \vdots  \\
 F_n  = C^n * F_0 \\
-$$
 
-Formula:
+\text { } \\ \text { } \\
+\text {Substituting F back }
+\text { } \\ \text { } \\
 
-$$
 \begin{bmatrix}
  f_{n+1} \\
  f_{n}
