@@ -66,7 +66,14 @@ $$
 
 ### Using matrix
 
-Multiplying the matrix {{1, 1}, {1, 0}} n times my itself, will result in a matrix, whose (0, 1) or (1, 0) element would be the nth fibonacci number.
+$$
+\begin{bmatrix}
+ 1 && 1 \\
+ 1 && 0
+\end{bmatrix}
+$$
+
+Multiplying the above matrix n times my itself, will result in a matrix, whose (0, 1) or (1, 0) element would be the nth fibonacci number.
 
 Base rule of Fibonacci numbers is $f(n) = f(n-1) + f(n-2)$
 
