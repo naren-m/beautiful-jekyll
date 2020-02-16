@@ -3,6 +3,9 @@ layout: post
 title: Fibonacci Sequence
 ---
 
+{% include mathjax.html %}
+
+
 # Fibonacci Sequence
 
 Fibonacci sequence is a series of numbers, where each number is the sum of previous 2 numbers.
