@@ -10,7 +10,7 @@ published: true
 
 ## How to show math formulae on Github Pages
 
-you can use an inline formula $$\forall x \in R$$ like this one
+you can use an inline formula $\forall x \in R$ like this one
 
 or display a centered formula like this
 $$
