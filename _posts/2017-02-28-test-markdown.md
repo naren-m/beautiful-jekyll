@@ -12,7 +12,6 @@ published: true
 
 you can use an inline formula $$\forall x \in R$$ like this one
 
-
 or display a centered formula like this
 $$
 M = \left( \begin{array}{ccc}
