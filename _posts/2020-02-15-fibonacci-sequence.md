@@ -5,18 +5,7 @@ subtitle: Fibonacci Sequence
 published: true
 ---
 
-{% include mathjax.html %}
-
 # Fibonacci Sequence
-
-- [Fibonacci Sequence](#fibonacci-sequence)
-	- [Some properties of Fibonacci numbers](#some-properties-of-fibonacci-numbers)
-		- [Golden ratio (φ)](#golden-ratio-%cf%86)
-		- [Every nth number if multiple of fib(n)](#every-nth-number-if-multiple-of-fibn)
-		- [Exact divisibility of fib(n)](#exact-divisibility-of-fibn)
-	- [Finding Nth term of a Fibonacci sequence](#finding-nth-term-of-a-fibonacci-sequence)
-		- [Using golden ratio](#using-golden-ratio)
-		- [Power of matrix {{1, 1}, {1, 0}}](#power-of-matrix-1-1-1-0)
 
 Fibonacci sequence is a series of numbers, where each number is the sum of previous 2 numbers.
 
@@ -114,9 +103,7 @@ F(3)  = C * F(2) = C^2 * ( C * F(0)) = C^3 * F(0)
 . . .
 F(n)  = C^n * F(0)
 ```
-$$
-\left| \begin{array}{cc} f_{11} & F_{12} \\ x_{21} & x_{22} \end{array} \right|
-$$
+
 Formula:
 
 ```math
