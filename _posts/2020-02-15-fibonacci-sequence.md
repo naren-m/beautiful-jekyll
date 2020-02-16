@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Fibonacci Sequence
-subtitle: dumy
+subtitle: Fibonacci Sequence
 published: true
 ---
+
+{% include mathjax.html %}
+
 # Fibonacci Sequence
 
 - [Fibonacci Sequence](#fibonacci-sequence)
