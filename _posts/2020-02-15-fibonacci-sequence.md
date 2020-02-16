@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fibonacci Sequence
+subtitle: dumy
 published: true
 ---
 # Fibonacci Sequence
@@ -70,9 +71,7 @@ Few more equalities for golden ratio,
 We can calculate nth term of a fibonacci sequence using a formula,
 
 $$
-fib(n) =  \frac{( φ^n - (1-φ)^n)}{\sqrt{5}}
-$$
-$$
+fib(n) =  \frac{( φ^n - (1-φ)^n)}{\sqrt{5}} \\
 fib(6) = (1.61803^6 -  ( -0.61803) ^6) /√5 = 8.000000000000002≃ 8
 $$
 
@@ -112,7 +111,9 @@ F(3)  = C * F(2) = C^2 * ( C * F(0)) = C^3 * F(0)
 . . .
 F(n)  = C^n * F(0)
 ```
-
+$$
+\left| \begin{array}{cc} f_{11} & F_{12} \\ x_{21} & x_{22} \end{array} \right|
+$$
 Formula:
 
 ```math
