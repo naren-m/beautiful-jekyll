@@ -10,13 +10,13 @@ title: Fibonacci Sequence
 
 Fibonacci sequence is a series of numbers, where each number is the sum of previous 2 numbers.
 
-$Ex: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 \ldots$
+$$Ex: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 \ldots$$
 
 ## Some properties of Fibonacci numbers
 
 ### Golden ratio (φ)
 
-The ratio of the fibonacci numbers are close to the golden ratio. $φ = 1.618…$
+The ratio of the fibonacci numbers are close to the golden ratio. $$φ = 1.618…$$
 
 $$
 3/2  = 1.5 \\
@@ -53,13 +53,13 @@ $$
 
 ### Using golden ratio
 
-Phi($φ$), golden ratio is a special number.
+Phi($$φ$$), golden ratio is a special number.
 
 $$
 φ = \frac{(1+ \sqrt{5})}{2} = 1.618034….
 $$
 
-We can calculate $n^{th}$ term of a fibonacci sequence using a formula,
+We can calculate $$n^{th}$$ term of a fibonacci sequence using a formula,
 
 $$
 fib(n) =  \frac{( φ^n - (1-φ)^n)}{\sqrt{5}} \\ \\
