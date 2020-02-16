@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/texmath.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/vscode-texmath.css">
+
+</head><body>
+
+<h1 id="fibonacci-sequence-1" data-line="5" class="code-line">Fibonacci Sequence</h1>
+<ul>
+<li data-line="7" class="code-line"><a href="#fibonacci-sequence" data-href="#fibonacci-sequence">Fibonacci Sequence</a>
+<ul>
+<li data-line="8" class="code-line"><a href="#some-properties-of-fibonacci-numbers" data-href="#some-properties-of-fibonacci-numbers">Some properties of Fibonacci numbers</a>
+<ul>
+<li data-line="9" class="code-line"><a href="#golden-ratio-%CF%86" data-href="#golden-ratio-%CF%86">Golden ratio (φ)</a></li>
+<li data-line="10" class="code-line"><a href="#every-nth-number-if-multiple-of-fibn" data-href="#every-nth-number-if-multiple-of-fibn">Every nth number if multiple of fib(n)</a></li>
+<li data-line="11" class="code-line"><a href="#exact-divisibility-of-fibn" data-href="#exact-divisibility-of-fibn">Exact divisibility of fib(n)</a></li>
+</ul>
+</li>
+<li data-line="12" class="code-line"><a href="#finding-nth-term-of-a-fibonacci-sequence" data-href="#finding-nth-term-of-a-fibonacci-sequence">Finding Nth term of a Fibonacci sequence</a>
+<ul>
+<li data-line="13" class="code-line"><a href="#using-golden-ratio" data-href="#using-golden-ratio">Using golden ratio</a></li>
+<li data-line="14" class="code-line"><a href="#power-of-matrix-1-1-1-0" data-href="#power-of-matrix-1-1-1-0">Power of matrix {{1, 1}, {1, 0}}</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p data-line="16" class="code-line">Fibonacci sequence is a series of numbers, where each number is the sum of previous 2 numbers.</p>
+<p data-line="18" class="code-line">Ex: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 …</p>
+<h2 id="some-properties-of-fibonacci-numbers-1" data-line="20" class="code-line">Some properties of Fibonacci numbers</h2>
+<h3 id="golden-ratio-cf86-1" data-line="22" class="code-line">Golden ratio (φ)</h3>
+<p data-line="24" class="code-line">The ratio of the fibonacci numbers are close to the golden ratio. <code>φ = 1.618…</code></p>
+<pre><code data-line="26" class="code-line language-math"><code><div>3/2  = 1.5
+5/3  = 1.666
+8/5  = 1.6
+13/8 = 1.625
+...
+233/144 = 1.618055...
+377/233 = 1.618025...
+</div></code></code></pre>
+<h3 id="every-nth-number-if-multiple-of-fibn-1" data-line="36" class="code-line">Every nth number if multiple of fib(n)</h3>
+<p data-line="38" class="code-line">|n=     |0  |1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |
+|———----|--—|--—|--—|--—|--—|--—|--—|--—|--—|--—|--—|--—|
+|fib(n) |0  |1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |</p>
+<ul>
+<li data-line="42" class="code-line">3rd fibonacci number is 2 and every 3rd number is a multiple of 2</li>
+<li data-line="43" class="code-line">4th fibonacci number is 3 and every 4th number is a multiple of 3</li>
+<li data-line="44" class="code-line">5th fibonacci number is 5 and every 5th number is a multiple of 5</li>
+</ul>
+<h3 id="exact-divisibility-of-fibn-1" data-line="46" class="code-line">Exact divisibility of fib(n)</h3>
+<p data-line="48" class="code-line">Two fibonacci numbers are exactly divisible if and only of their indices are exactly divisible</p>
+<p data-line="50" class="code-line"><code>fin(n)/fib(m) == 0 if and only if n/m == 0</code></p>
+<h2 id="finding-nth-term-of-a-fibonacci-sequence-1" data-line="52" class="code-line">Finding Nth term of a Fibonacci sequence</h2>
+<h3 id="using-golden-ratio-1" data-line="54" class="code-line">Using golden ratio</h3>
+<p data-line="56" class="code-line">Phi(φ), golden ratio is a special number.</p>
+<p data-line="59" class="code-line">φ = (1 + √5) / 2 = 1.618034….</p>
+<p data-line="61" class="code-line">Few more equalities for golden ratio,</p>
+<p data-line="65" class="code-line">We can calculate nth term of a fibonacci sequence using a formula,</p>
+<pre><code data-line="67" class="code-line language-math"><code><div>fib(n) = ( φ^n - (1-φ)^n  ) / √5
+fib(6) = (1.61803^6 -  ( -0.61803) ^6) /√5 = 8.000000000000002≃ 8
+</div></code></code></pre>
+<h3 id="power-of-matrix-1-1-1-0-1" data-line="72" class="code-line">Power of matrix {{1, 1}, {1, 0}}</h3>
+<p data-line="74" class="code-line">Multiplying the matrix {{1, 1}, {1, 0}} n times my itself, will result in a matrix, whose (0, 1) or (1, 0) element would be the nth fibonacci number.</p>
+<p data-line="76" class="code-line">Base rule of Fibonacci numbers is <code>f(n) = f(n-1) + f(n-2)</code></p>
+<pre><code data-line="78" class="code-line language-math"><code><div>| f(n)   |   =  | f(n-1) + f(n-2) |
+| f(n-1) |      | f(n-1)
+</div></code></code></pre>
+<p data-line="83" class="code-line">Above could be represented as,</p>
+<pre><code data-line="85" class="code-line"><code><div>| f(n)   |   =   | 1  1 |  X  | f(n-1) |
+| f(n-1) |       | 1  0 |     | f(n-2) |
+</div></code></code></pre>
+<p data-line="90" class="code-line">if we represent the matrix as below,</p>
+<pre><code data-line="92" class="code-line"><code><div>F(n) = | f(n)   |
+	   | f(n-1) |
+</div></code></code></pre>
+<p data-line="97" class="code-line">then the above can be represented as <code>F(n) = C * F(n-1)</code></p>
+<p data-line="99" class="code-line">And now with recurrence, we can see how we can find the nth fibonacci number by matrix multiplication.</p>
+<pre><code data-line="101" class="code-line language-math"><code><div>Base case, n = 1
+F(1)  = C * F(0)
+F(2)  = C * F(1) = C * ( C * F(0)) = C^2 * F(0)
+F(3)  = C * F(2) = C^2 * ( C * F(0)) = C^3 * F(0)
+. . .
+F(n)  = C^n * F(0)
+</div></code></code></pre>
+<p data-line="110" class="code-line">Formula:</p>
+<pre><code data-line="112" class="code-line language-math"><code><div>| f(n+1) |   =   | 1  1 |  ^ n
+| f(n)   |       | 1  0 |
+</div></code></code></pre>
+
+</body></html>
