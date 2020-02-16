@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Fibonacci Sequence
-subtitle: Fibonacci Sequence
-published: true
 ---
 
 # Fibonacci Sequence
