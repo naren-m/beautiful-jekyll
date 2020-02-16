@@ -27,7 +27,6 @@ $$
 
 ### Every nth number if multiple of fib(n)
 
-
 | n=     | 0  | 1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |
 |--------|----|----|---|---|---|---|---|---|---|---|---|---|
 | $Fib_n$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
@@ -65,7 +64,7 @@ fib(n) =  \frac{( φ^n - (1-φ)^n)}{\sqrt{5}} \\ \\
 fib(6) = (1.61803^6 -  ( -0.61803) ^6) /√5 = 8.000000000000002≃ 8
 $$
 
-### Using matrix [[1, 1] [1, 0]]
+### Using matrix
 
 Multiplying the matrix {{1, 1}, {1, 0}} n times my itself, will result in a matrix, whose (0, 1) or (1, 0) element would be the nth fibonacci number.
 
