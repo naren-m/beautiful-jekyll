@@ -160,3 +160,5 @@ $$
 - [Maths is fun](https://www.mathsisfun.com/numbers/fibonacci-sequence.html)
 - [Fibonacci Mystery - Numberphile
 ](https://www.youtube.com/watch?v=Nu-lW-Ifyec)
+- [Mathjax quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
+- [LaTeX Basics](https://en.wikibooks.org/wiki/LaTeX/Basics)
