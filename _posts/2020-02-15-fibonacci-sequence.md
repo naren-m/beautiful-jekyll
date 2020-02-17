@@ -5,6 +5,14 @@ title: Fibonacci Sequence
 
 {% include mathjax.html %}
 
+- [Fibonacci Sequence](#fibonacci-sequence)
+	- [Some properties of Fibonacci numbers](#some-properties-of-fibonacci-numbers)
+		- [Golden ratio (φ)](#golden-ratio-%cf%86)
+		- [Every nth number if multiple of fib(n)](#every-nth-number-if-multiple-of-fibn)
+		- [Exact divisibility of fib(n)](#exact-divisibility-of-fibn)
+	- [Finding Nth term of a Fibonacci sequence](#finding-nth-term-of-a-fibonacci-sequence)
+		- [Using golden ratio](#using-golden-ratio)
+		- [Using matrix](#using-matrix)
 
 # Fibonacci Sequence
 
@@ -35,9 +43,9 @@ $$
 | $$Fib_n$$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
 
 
-- Third fibonacci number is 2 and every third number is a multiple of 2
-- Fourth fibonacci number is 3 and every fourth number is a multiple of 3
-- Fifth fibonacci number is 5 and every fifth number is a multiple of 5
+- $$ 3^{rd} $$ fibonacci number is 2 and every $$ 3_{rd} $$ number is a multiple of 2
+- $$ 4^{th} $$ fibonacci number is 3 and every $$ 4^{th} $$ number is a multiple of 3
+- $$ 5^{th} $$ fibonacci number is 5 and every $$ 5^{th} $$ number is a multiple of 5
 
 ### Exact divisibility of fib(n)
 
@@ -137,10 +145,7 @@ F_n  = C^n * F_0 \\
 \text {Substituting F back }
 \text { } \\ \text { } \\
 
-\begin{bmatrix}
- f_{n+1} \\
- f_{n}
-\end{bmatrix} =
+F_n =
 
 \begin{bmatrix}
  1 && 1 \\
