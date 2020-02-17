@@ -13,6 +13,7 @@ title: Fibonacci Sequence
 	- [Finding Nth term of a Fibonacci sequence](#finding-nth-term-of-a-fibonacci-sequence)
 		- [Using golden ratio](#using-golden-ratio)
 		- [Using matrix](#using-matrix)
+	- [References](#references)
 
 # Fibonacci Sequence
 
@@ -151,3 +152,11 @@ F_n =
  1 && 0
 \end{bmatrix} ^ n
 $$
+
+## References
+- [Math world](http://mathworld.wolfram.com/FibonacciNumber.html)
+- [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)
+- [Math survey UK](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fib.html)
+- [Maths is fun](https://www.mathsisfun.com/numbers/fibonacci-sequence.html)
+- [Fibonacci Mystery - Numberphile
+](https://www.youtube.com/watch?v=Nu-lW-Ifyec)
