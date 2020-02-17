@@ -154,6 +154,7 @@ F_n =
 $$
 
 ## References
+
 - [Math world](http://mathworld.wolfram.com/FibonacciNumber.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)
 - [Math survey UK](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fib.html)
