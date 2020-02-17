@@ -13,6 +13,7 @@ title: Fibonacci Sequence
 	- [Finding Nth term of a Fibonacci sequence](#finding-nth-term-of-a-fibonacci-sequence)
 		- [Using golden ratio](#using-golden-ratio)
 		- [Using matrix](#using-matrix)
+		- [Code](#code)
 	- [References](#references)
 
 # Fibonacci Sequence
@@ -152,6 +153,9 @@ F_n =
  1 && 0
 \end{bmatrix} ^ n
 $$
+
+### Code
+[Code for finding nth term in fibonacci series](https://github.com/naren-m/programming_practice/blob/master/general/fibonacci.py)
 
 ## References
 
