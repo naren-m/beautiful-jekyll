@@ -43,9 +43,9 @@ $$
 | $$Fib_n$$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
 
 
-- $$ 3^{rd} $$ fibonacci number is 2 and every $$ 3_{rd} $$ number is a multiple of 2
-- $$ 4^{th} $$ fibonacci number is 3 and every $$ 4^{th} $$ number is a multiple of 3
-- $$ 5^{th} $$ fibonacci number is 5 and every $$ 5^{th} $$ number is a multiple of 5
+- $3^{rd}$ fibonacci number is 2 and every $3^{rd}$ number is a multiple of 2
+- $4^{th}$ fibonacci number is 3 and every $4^{th}$ number is a multiple of 3
+- $5^{th}$ fibonacci number is 5 and every $5^{th}$ number is a multiple of 5
 
 ### Exact divisibility of fib(n)
 
@@ -61,7 +61,7 @@ $$
 
 ### Using golden ratio
 
-Phi($φ$), golden ratio is a special number.
+Phi(φ), golden ratio is a special number.
 
 $$
 φ = \frac{(1+ \sqrt{5})}{2} = 1.618034….
