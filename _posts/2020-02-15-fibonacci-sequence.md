@@ -24,7 +24,7 @@ $$Ex: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 \ldots$$
 
 ### Golden ratio (φ)
 
-The ratio of the fibonacci numbers are close to the golden ratio. $$φ = 1.618…$$
+The ratio of the fibonacci numbers are close to the golden ratio. $φ = 1.618…$
 
 $$
 3/2  = 1.5 \\
@@ -40,8 +40,7 @@ $$
 
 | n=     | 0  | 1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |
 |--------|----|----|---|---|---|---|---|---|---|---|---|---|
-| $$Fib_n$$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
-
+| $Fib_n$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
 
 - $3^{rd}$ fibonacci number is 2 and every $3^{rd}$ number is a multiple of 2
 - $4^{th}$ fibonacci number is 3 and every $4^{th}$ number is a multiple of 3
