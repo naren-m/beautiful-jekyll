@@ -40,11 +40,11 @@ $$
 
 | n=     | 0  | 1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |
 |--------|----|----|---|---|---|---|---|---|---|---|---|---|
-| $Fib_n$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
+| $$Fib_n$$  |  0 | 1  |1  |2  |3  |5  |8  |13 |21 |34 |55 |89 |
 
-- $3^{rd}$ fibonacci number is 2 and every $3^{rd}$ number is a multiple of 2
-- $4^{th}$ fibonacci number is 3 and every $4^{th}$ number is a multiple of 3
-- $5^{th}$ fibonacci number is 5 and every $5^{th}$ number is a multiple of 5
+- $$3^{rd}$$ fibonacci number is 2 and every $$3^{rd}$$ number is a multiple of 2
+- $$4^{th}$$ fibonacci number is 3 and every $$4^{th}$$ number is a multiple of 3
+- $$5^{th}$$ fibonacci number is 5 and every $$5^{th}$$ number is a multiple of 5
 
 ### Exact divisibility of fib(n)
 
@@ -85,7 +85,7 @@ $$
 
 Multiplying the above matrix n times my itself, will result in a matrix, whose (0, 1) or (1, 0) element would be the nth fibonacci number.
 
-Base rule of Fibonacci numbers is $f(n) = f(n-1) + f(n-2)$
+Base rule of Fibonacci numbers is $$f(n) = f(n-1) + f(n-2)$$
 
 $$
 \begin{bmatrix}
@@ -129,7 +129,7 @@ F_n = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-then the above can be represented as $F_n = C *  F_{n-1}$
+then the above can be represented as $$F_n = C *  F_{n-1}$$
 
 And now with recurrence, we can see how we can find the nth fibonacci number by matrix multiplication.
 
